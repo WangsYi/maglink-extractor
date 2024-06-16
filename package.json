@@ -1,8 +1,8 @@
 {
-  "name": "brower-pilot",
-  "displayName": "Brower pilot",
+  "name": "maglink-extractor",
+  "displayName": "MagLink Extractor",
   "version": "0.0.1",
-  "description": "A basic Plasmo extension.",
+  "description": "A browser extension that instantly finds and manages all magnet links on any webpage, streamlining your torrent resource discovery.",
   "author": "wangsyi",
   "scripts": {
     "dev": "plasmo dev",
@@ -20,7 +20,10 @@
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
     "prettier": "3.2.4",
+    "tailwindcss": "^3.4.4",
     "typescript": "5.3.3"
   },
   "manifest": {
