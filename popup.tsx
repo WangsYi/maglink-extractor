@@ -54,7 +54,10 @@ function Popup() {
 
   return (
     <div className="p-4">
-      <h1 className="text-lg font-bold mb-2">Magnet Links</h1>
+      {Object.keys(groupedLinks).length === 0 ? (<p>Empty</p>):(
+
+        <>
+        <h1 className="text-lg font-bold mb-2">Magnet Links</h1>
       <button onClick={handleSelectAll} className="mb-4 bg-blue-500 text-white px-2 py-1 rounded">
         {selectAll ? "Deselect All" : "Select All"}
       </button>
@@ -91,6 +94,9 @@ function Popup() {
       <button onClick={handleCopy} className="mt-4 bg-green-500 text-white px-4 py-2 rounded">
         Copy Selected Links
       </button>
+        </>
+      )}
+      
     </div>
   )
 }
